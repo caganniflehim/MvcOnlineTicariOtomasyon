@@ -1,0 +1,35 @@
+﻿@model MvcOnlineTicariOtomasyon.Models.Siniflar.Urun
+@{
+    ViewBag.Title = "YeniUrun";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+<br />
+<h2>YeniUrun</h2>
+<br />
+<form class="form-group" method="post">
+    @Html.LabelFor(x => x.UrunAd)
+    @Html.TextBoxFor(x => x.UrunAd, new { @class = "Form-control" })
+    <br />
+    @Html.LabelFor(x => x.Marka)
+    @Html.TextBoxFor(x => x.Marka, new { @class = "Form-control" })
+    <br />
+    @Html.LabelFor(x => x.Stok)
+    @Html.TextBoxFor(x => x.Stok, new { @class = "Form-Control" })
+    <br />
+    @Html.LabelFor(x => x.AlisFiyat)
+    @Html.TextBoxFor(x => x.AlisFiyat, new { @class = "Form-Control" })
+    <br />
+    @Html.LabelFor(x => x.SatisFiyat)
+    @Html.TextBoxFor(x => x.SatisFiyat, new { @class = "Form-Control" })
+    <br />
+    @Html.LabelFor(x => x.kategori.KategoriId)
+    @Html.TextBoxFor(x => x.kategori.KategoriId, new { @class = "Form-Control" })
+    <br />
+    @Html.LabelFor(x => x.UrunGorsel)
+    @Html.TextBoxFor(x => x.UrunGorsel, new { @class = "Form-Control" })
+    <br />
+    @Html.LabelFor(x => x.Durum)
+    @Html.TextBoxFor(x => x.Durum, new { @class = "Form-Control" })
+    <br />
+    <button class="btn btn-info">kaydet</button>
+</form>
